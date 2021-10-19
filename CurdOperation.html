@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Curd Operation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jscript.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h3>Curd Operation By Sandeep Gupta</h3>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <form onsubmit="onFormSubmit()" autocomplete="off">
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your Name"
+              class="form-control"
+            />
+            <br />
+            <span id="nameError"></span> <br>
+
+            <label for="name">Number</label><br />
+            <input
+              type="text"
+              id="number"
+              placeholder="Enter your number"
+              class="form-control"
+            />
+            <br />
+            <span id="numberError"></span> <br>
+
+            <label for="name">Email</label><br />
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your Name"
+              class="form-control"
+            />
+            <br />
+            <span id="emailError"></span>  <br>
+
+            <input
+              type="submit"
+              class="btn btn-info"
+              data-dismiss="modal"
+              value="Submit"
+            />
+            <input type="reset" class="btn btn-danger" value="Reset" />
+          </form>
+        </div>
+        <div class="col-md-8 offset-xl-1">
+          <table id="dataList" class="table table-dark table-bordered">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Mobile Number</th>
+                <th>Mail Id</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+      
+  </body>
+</html>
